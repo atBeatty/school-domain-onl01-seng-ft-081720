@@ -38,9 +38,7 @@ class School
 
   def sort
 
-    @roster.each do |grade_key, student_list|
-      student_list
-    end
+    @roster.sort
 
   end
 
