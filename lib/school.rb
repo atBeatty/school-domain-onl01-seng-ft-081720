@@ -30,9 +30,10 @@ class School
     else
       @roster.each do |grade_key, name_arr|
         if grade == grade_key
-          @roster[grade] << name_arr
+          @roster[grade] << name
         else
-          @roster[grade] = name.split
+          @roster[grade] = []
+          @roster[grade] << name
         end
       end
     end
