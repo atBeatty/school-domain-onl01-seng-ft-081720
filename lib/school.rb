@@ -32,7 +32,7 @@ class School
         if grade == grade_key
           @roster[grade] << name_arr
         else
-          @roster[grade] = [name]
+          @roster[grade] = name.split
         end
       end
     end
