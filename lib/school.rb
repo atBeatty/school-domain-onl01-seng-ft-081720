@@ -32,7 +32,14 @@ class School
     end
   end
 
-  
+  def grade(name)
+
+    @roster.each do |grade_key, name_value|
+      grade_key if name == name_value
+    end
+
+
+  end
 
 
 
