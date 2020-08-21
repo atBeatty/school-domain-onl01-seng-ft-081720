@@ -32,7 +32,7 @@ class School
         if grade == grade_key
           @roster[grade] << name
         else
-          @roster[grade] = []
+          # @roster[grade] = []
           @roster[grade] << name
         end
       end
