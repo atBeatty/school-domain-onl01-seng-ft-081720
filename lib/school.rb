@@ -19,24 +19,18 @@ class School
   def name
     @name
   end
-
   def roster
     @roster
   end
 
   def add_student(name, grade)
-    if @roster.empty?
-      @roster[grade] = [name]
+    if @roster[grade] == true
+      @roster << name
+    else
+      @roster[grade] = []
+      @roster[grade] << name
     end
-      @roster.each do |grade_key, name_arr|
-        if grade == grade_key
-          @roster[grade] << name
-        else
-          # @roster[grade] = []
-          @roster[grade] = [name]
-        end
-      end
-
+     
   end
 
 
