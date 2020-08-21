@@ -32,10 +32,13 @@ class School
     end
   end
 
-  def grade(name)
-
+  def grade(grade)
+    grade_list = []
     @roster.each do |grade_key, name_value|
-      grade_key if name == name_value
+      if grade_key = grade
+        grade_list << name_value
+      end
+      grade_list
     end
 
 
