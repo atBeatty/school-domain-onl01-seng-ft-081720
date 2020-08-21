@@ -38,8 +38,10 @@ class School
 
   def sort
 
-    @roster.sort
-    
+    @roster.each do |grade_key, student_list|
+      student_list
+    end
+
   end
 
 
