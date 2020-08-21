@@ -27,7 +27,7 @@ class School
   def add_student(name, grade)
     if @roster.empty?
       @roster[grade] = [name]
-    else
+    end
       @roster.each do |grade_key, name_arr|
         if grade == grade_key
           @roster[grade] << name
@@ -36,7 +36,6 @@ class School
           @roster[grade] = [name]
         end
       end
-    end
 
   end
 
