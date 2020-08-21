@@ -36,6 +36,13 @@ class School
     @roster[grade]
   end
 
+  def sort
+
+    @roster.collect do |grade_key, student_list|
+      student_list.sort
+    end
+
+  end
 
 
 
